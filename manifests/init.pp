@@ -1,6 +1,7 @@
 # == Class: timezone_win
 #
-# Full description of class timezone_win here.
+#   Manage the timezone on windows systems. Use WMI to verify what the timezone
+#   currently is and tzutil.exe to set it.
 #
 # === Parameters
 #
@@ -10,7 +11,7 @@
 #
 # === Examples
 #
-#  class { timezone_win:
+#  class { ::timezone_win:
 #    timezone = 'Mountain Standard Time',
 #  }
 #
