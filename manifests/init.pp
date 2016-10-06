@@ -10,7 +10,7 @@
 #
 # === Examples
 #
-#  class { timezone:
+#  class { timezone_win:
 #    timezone = 'Mountain Standard Time',
 #  }
 #
