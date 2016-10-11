@@ -29,6 +29,9 @@ class timezone_win (
 
 ){
 
+  # parameter validatoin
+  validate_string($timezone)
+
   exec { 'set-timezone':
     command  => "tzutil /s '${timezone}'",
     onlyif   => "if ((Get-WmiObject -Class win32_timezone).StandardName -eq '${timezone}') {exit 1}",
