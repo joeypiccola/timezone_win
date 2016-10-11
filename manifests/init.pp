@@ -29,7 +29,7 @@ class timezone_win (
 
 ){
 
-  # parameter validatoin
+  # parameter validation
   validate_string($timezone)
 
   exec { 'set-timezone':
