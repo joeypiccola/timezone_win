@@ -1,7 +1,18 @@
 require 'spec_helper'
-describe 'timezone_win' do
 
-  context 'with defaults for all parameters' do
-    it { should contain_class('timezone_win') }
-  end
+describe 'timezone_win' do
+  let(:facts) {{
+  }}
+  let(:params) {{
+    :timezone => 'Mountain Standard Time',
+  }}
+  it { should compile }
+  
+  it { should contain_exec('set-timezone').with(
+    'command'  => "tzutil /s 'Mountain Standard Time'",
+    'onlyif'   => "if ((Get-WmiObject -Class win32_timezone).StandardName -eq 'Mountain Standard Time') {exit 1}",
+    'provider' => "powershell"
+    )
+  }
+  
 end
