@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/joeypiccola/timezone_win.svg)](https://travis-ci.org/joeypiccola/timezone_win)
+
 # timezone_win
 
 Manage the timezone on Windows systems.
