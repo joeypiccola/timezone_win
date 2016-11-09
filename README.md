@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/joeypiccola/timezone_win.svg)](https://travis-ci.org/joeypiccola/timezone_win)
+[![Build Status](https://travis-ci.org/joeypiccola/timezone_win.svg?branch=master)](https://travis-ci.org/joeypiccola/timezone_win)
 
 # timezone_win
 
