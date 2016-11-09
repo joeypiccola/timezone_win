@@ -25,7 +25,7 @@
 #
 class timezone_win (
 
-  $timezone,
+  $timezone = undef,
 
 ){
 
