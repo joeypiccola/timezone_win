@@ -6,6 +6,9 @@ require 'puppet-lint/tasks/puppet-lint'
 require 'puppet-syntax/tasks/puppet-syntax'
 
 exclude_paths = [
+  "bundle/**/*",
+  "pkg/**/*",
+  "vendor/**/*",
   "spec/**/*",
 ]
 
