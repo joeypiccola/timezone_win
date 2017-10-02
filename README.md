@@ -12,6 +12,10 @@ This module leverages tzutil.exe to set the timezone. It also leverages PowerShe
 WMI (specifically the win32_timezone class) to get the current timezone. Below are the 
 permitted timezone values that may be used.
 
+The main advantage to this module over puppetlabs/dsc which calls the xTimezone DSC
+resource is that this module does **not** have a dependency on PowerShell Version 5.
+Lets face it, some of us have old stuff to manage.
+
 ## Example
 ```ruby
 class { '::timezone_win':
