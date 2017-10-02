@@ -1,19 +1,23 @@
-# for rspec-puppet documentation - see http://rspec-puppet.com/tutorial/
-require_relative '../spec_helper'
+require 'spec_helper'
+
 describe 'timezone_win' do
-  let(:facts) {{
-    :concat_basedir         => '/var/tmp',
-  }}
-  let(:params) {{
-    :timezone => 'Mountain Standard Time',
-  }}
-  it { should compile }
-  
-  it { should contain_exec('set-timezone').with(
-    'command'  => "tzutil /s 'Mountain Standard Time'",
-    'onlyif'   => "if ((Get-WmiObject -Class win32_timezone).StandardName -eq 'Mountain Standard Time') {exit 1}",
-    'provider' => 'powershell'
-    )
-  }
-  
+  on_supported_os(facterversion: '2.4').each do |os, os_facts|
+    context "on #{os}" do
+      let(:facts) { os_facts }
+
+      context 'passes with minimal params' do
+        let(:params) { { timezone: 'Mountain Standard Time' } }
+
+        it {
+          is_expected.to contain_exec('set_timezone').with(
+            'command'  => "tzutil /s 'Mountain Standard Time'",
+            'onlyif'   => "if ((Get-WmiObject -Class win32_timezone).StandardName -eq 'Mountain Standard Time') {exit 1}",
+            'provider' => 'powershell',
+          )
+        }
+
+        it { is_expected.to compile }
+      end
+    end
+  end
 end

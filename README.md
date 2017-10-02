@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/joeypiccola/timezone_win.svg?branch=master)](https://travis-ci.org/joeypiccola/timezone_win)
-
 # timezone_win
 
 Manage the timezone on Windows systems.
@@ -9,8 +7,8 @@ Manage the timezone on Windows systems.
  * ```timezone```       - The timezone to use.
 
 ## Usage
-This module leverages tzutil.exe to set the timezone. It also leverages powershell and
-WMI (specifally the win32_timezone class) to get the current timezone. Below are the 
+This module leverages tzutil.exe to set the timezone. It also leverages PowerShell and
+WMI (specifically the win32_timezone class) to get the current timezone. Below are the 
 permitted timezone values that may be used.
 
 ## Example
