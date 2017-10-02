@@ -4,4 +4,4 @@
 fixtures:
   forge_modules:
      stdlib: "puppetlabs/stdlib"
-     registry: "puppetlabs/registry"
+     registry: "puppetlabs/powershell"
