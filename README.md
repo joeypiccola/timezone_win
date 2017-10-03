@@ -2,7 +2,7 @@
 ![Build status](https://ci.appveyor.com/api/projects/status/3p3miarvdr4beq5k/branch/master?svg=true&passingText=master%20-%20PASSING&pendingText=master%20-%20PENDING&failingText=master%20-%20FAILING)
 ![Build status](https://ci.appveyor.com/api/projects/status/3p3miarvdr4beq5k/branch/dev?svg=true&passingText=dev%20-%20PASSING&pendingText=dev%20-%20PENDING&failingText=dev%20-%20FAILING)
 
-Manage the timezone on Windows systems.
+Manage the timezone on a Windows machine.
 
 ## Parameters
 
