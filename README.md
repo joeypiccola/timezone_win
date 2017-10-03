@@ -19,7 +19,7 @@ Lets face it, some of us have old stuff to manage.
 
 ## Example
 ```ruby
-class { '::timezone_win':
+class { timezone_win:
   timezone => 'Mountain Standard Time',
 }
 ```
