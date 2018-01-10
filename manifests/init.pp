@@ -25,12 +25,9 @@
 #
 class timezone_win (
 
-  $timezone = undef,
+  String $timezone = undef,
 
 ){
-
-  # parameter validation
-  validate_string($timezone)
 
   exec { 'set_timezone':
     command  => "tzutil /s '${timezone}'",
