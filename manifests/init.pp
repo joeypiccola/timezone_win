@@ -25,7 +25,7 @@
 #
 class timezone_win (
 
-  String $timezone = undef,
+  Timezone_win::Timezone $timezone = undef,
 
 ){
 
