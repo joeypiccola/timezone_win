@@ -31,7 +31,7 @@ class timezone_win (
 
   exec { 'set_timezone':
     command  => "tzutil /s '${timezone}'",
-    onlyif   => "if ((Get-WmiObject -Class win32_timezone -Property standardname).StandardName -eq '${timezone}') {exit 1}",
+    onlyif   => "if ((tzutil /g) -eq '${timezone}') {exit 1}",
     provider => powershell,
   }
 
