@@ -11,7 +11,7 @@ describe 'timezone_win' do
         it {
           is_expected.to contain_exec('set_timezone').with(
             'command'  => "tzutil /s 'Mountain Standard Time'",
-            'onlyif'   => "if ((Get-WmiObject -Class win32_timezone -Property standardname).StandardName -eq 'Mountain Standard Time') {exit 1}",
+            'onlyif'   => "if ((tzutil /g) -eq 'Mountain Standard Time') {exit 1}",
             'provider' => 'powershell',
           )
         }
