@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 0.1.6
+
+Bump dependencies for modules and Puppet.
+
 ## Release 0.1.4
 
 **Features**

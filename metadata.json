@@ -1,15 +1,15 @@
 {
   "name": "jpi-timezone_win",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Joey Piccola",
   "summary": "Manage the timezone on a Windows machine.",
   "license": "MIT",
   "source": "https://github.com/joeypiccola/timezone_win",
   "project_page": "https://github.com/joeypiccola/timezone_win",
-  "issues_url": "https://github.com/joeypiccola/timezone_win/issues",  
+  "issues_url": "https://github.com/joeypiccola/timezone_win/issues",
   "dependencies": [
-    { "name": "puppetlabs/stdlib", "version_requirement": ">= 4.20.0" },
-    { "name": "puppetlabs/powershell", "version_requirement": ">= 2.1.2" }
+    { "name": "puppetlabs/stdlib", "version_requirement": ">= 5.1.0" },
+    { "name": "puppetlabs/powershell", "version_requirement": ">= 2.1.5" }
   ],
   "operatingsystem_support": [
     {
@@ -24,7 +24,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 4.7.0 < 6.0.0"
+      "version_requirement": ">= 4.7.0 < 7.0.0"
     }
   ],
   "pdk-version": "1.1.0",
