@@ -6,10 +6,16 @@
   "license": "MIT",
   "source": "https://github.com/joeypiccola/timezone_win",
   "project_page": "https://github.com/joeypiccola/timezone_win",
-  "issues_url": "https://github.com/joeypiccola/timezone_win/issues",  
+  "issues_url": "https://github.com/joeypiccola/timezone_win/issues",
   "dependencies": [
-    { "name": "puppetlabs/stdlib", "version_requirement": ">= 4.20.0" },
-    { "name": "puppetlabs/powershell", "version_requirement": ">= 2.1.2" }
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 4.20.0"
+    },
+    {
+      "name": "puppetlabs/powershell",
+      "version_requirement": ">= 2.1.2"
+    }
   ],
   "operatingsystem_support": [
     {
@@ -27,7 +33,7 @@
       "version_requirement": ">= 4.7.0 < 6.0.0"
     }
   ],
-  "pdk-version": "1.1.0",
-  "template-url": "file://C:/PROGRA~1/PUPPET~1/DevelopmentKit/share/cache/pdk-module-template.git",
-  "template-ref": "heads/master-0-g54e88a4"
+  "pdk-version": "1.13.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates#1.10.0",
+  "template-ref": "1.10.0-0-gbba9ac3"
 }
