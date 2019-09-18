@@ -6,7 +6,6 @@ All notable changes to this project will be documented in this file.
 - pdk update
 - add license file
 
-
 ## Release 0.1.4
 
 **Features**
