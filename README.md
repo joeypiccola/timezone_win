@@ -10,9 +10,9 @@ Manage the timezone on a Windows machine.
  * ```timezone```       - The timezone to use.
 
 ## Usage
-This module leverages tzutil.exe to set the timezone. It also leverages PowerShell and
-WMI (specifically the win32_timezone class) to get the current timezone. Below are the
-permitted timezone values that may be used.
+This module leverages tzutil.exe to get and set the timezone. PowerShell is used to
+execute the logic for comparing the current timezone to the desired timezone. Below
+are the permitted timezone values that may be used.
 
 The main advantage to this module over puppetlabs/dsc which calls the xTimezone DSC
 resource is that this module does **not** have a dependency on PowerShell Version 5.
